@@ -113,11 +113,29 @@ section{
 
 /* fin de seccion 1*/
 
+button{
+        width: 100px;
+        height: 100px;
+        background: #ffbbdc;
+        transition: width 10s;
+     }
+     
+button:hover {
+        width: 300px;
+     }
+
 .helabaires{
     font-family: 'Special Elite';
     color: #ffbbdc;
     font-size: 80px;
     text-align: unset;
+    width: 100px;
+    height: 100px;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
 
 .fotonosotras{
@@ -167,6 +185,16 @@ section{
 }
 
 /* FIN DE SECCION NOSOTRAS */
+
+@keyframes un_efecto{
+    0%{ width: 300px; }
+    25%{ width: 500px; }
+    50%{ width: 200px;
+    background-color: white; }
+    75%{ width: 500px;}
+    100%{ width: 100px;
+    background-color: beige; }
+} 
 
 /* MOBILE */
 
