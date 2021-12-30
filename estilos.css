@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#grilla {
+/*#grilla {
     display: grid;
     grid-template-areas: 
         "header1 header1 header1" 
@@ -22,7 +22,7 @@ header{
     background-position: center;
     font-family: 'Special Elite';
     color: #ffbbdc;
-    font-size: 60px;
+    font-size: 25px;
     text-align: unset;
 }
 
@@ -63,30 +63,6 @@ aside{
     background-size: cover;
 }
 
-
-/* inicio de menu - dentro del header */
-nav{
-    float: right;
-    width: 40%;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline;
-    font-size: 25px;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-nav a:hover{
-    color: #ffbbdc;
-}
-/* fin de menu - dentro del header */
-
-/* inicio de seccion 1 */ 
 .cono{
     width: 15%;
     height: auto
@@ -111,7 +87,7 @@ section{
     color: #ffbbdc;
 }
 
-/* fin de seccion 1*/
+
 
 button{
         width: 100px;
@@ -184,7 +160,7 @@ button:hover {
     background-color: #ffbbdc;
 }
 
-/* FIN DE SECCION NOSOTRAS */
+
 
 @keyframes un_efecto{
     0%{ width: 300px; }
@@ -195,10 +171,10 @@ button:hover {
     100%{ width: 100px;
     background-color: beige; }
 } 
-
+*/
 /* MOBILE */
 
-@media only screen and (max-width: 400px) {
+/*@media only screen and (max-width: 400px) {
     #grilla {
         display: grid;
         grid-template-areas: 
@@ -256,10 +232,10 @@ button:hover {
         background-position: center;
         background-size: cover;
     }
+
     
     
-    /* inicio de menu - dentro del header */
-    nav{
+  nav{
         float: right;
         width: 35%;
     }
@@ -278,9 +254,7 @@ button:hover {
     nav a:hover{
         color: #ffbbdc;
     }
-    /* fin de menu - dentro del header */
     
-    /* inicio de seccion 1 */ 
     .cono{
         width: 10%;
         height: auto
@@ -306,7 +280,7 @@ button:hover {
         font-size: 10px;
     }
     
-    /* fin de seccion 1*/
+     
     
     .helabaires{
         font-family: 'Special Elite';
@@ -361,5 +335,64 @@ button:hover {
         background-color: #ffbbdc;
     }
 }
+*/
+.navbar-text img{
+    height: 50px;
+}
 
+.jumbotron{
+    background-image: url(img/fotoprincipal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    margin: 0;
+    border-radius: 0;
+}
+h1{
+    color: #ffbbcd;
+    text-shadow: 0 0 5xp #222;
+    font-size: 50px;
+}
+.jumbotron p{
+    color: white;
+    font-size: 30px;
+}
 
+h2{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
+    font-family: 'Open Sans Condensed';
+}
+
+.carousel-inner{
+    height: 650px;
+    width: 100%;
+    margin: 0;
+    border-image-width: 10px;
+    border-radius: 0;
+}
+
+footer{
+    background-color: #ffbbcd;
+    color: white;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #ffbbdc;
+    transition: 10s;
+ }
+ 
+button:hover {
+    width: 300px;
+ }
+
+p{
+    font-family: 'Open Sans Condensed';
+    font-size: 2rem;
+    color: #ffbbcd;
+}

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPb
+    Pd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="descargado boostrap/css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,53 +16,118 @@
 <body>
     <section id="grilla">
     <!-- inicio del header -->
-        <header class="header2">HelaBaires
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="nosotras.html">Nosotras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <header class="header2">
+            <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+
+                 <!-- Navbar logog -->
+                 <span class="navbar-text">
+                    <img src="img/logohelabaires.png" alt="logo">
+                  </span>
+
+                <!-- Links -->
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nosotras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lugares</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                  </ul>
+                
+                </nav>
     </header>
     <main></main>
     <!-- Cierre del header -->
 
-    <!-- inicio de seccion 1-->
-        <section id="productos" class="border">
-            <h2 class="hola1">HOLA!</h2>
-            <p>Somos especialistas en helados, o quizas no, pero nos gusta mucho comer helados. Probamos en muuuchas heladerías de Buenos Aires y queremos compartir con vos los mejores helados - en nuestra opinión - de todo Baires. Proba y contanos tus opiniones!</p>
-            <img src="img/cono.png" class="cono">
-            </section>
-    <!-- fin de seccion 1 -->    
+    <!-- jumbotron inicio -->
+    <div class="jumbotron">
+        <h1>HelaBaires</h1>
+        <p>Conoce todos los secretos de las heladerías de Buenos Aires</p>
+      </div>
+<!-- jumbotron fin -->
 
-    <!-- inicio seccion 2-->
-        <section id="servicios" class="border">
-            <div class="container-fluid">
-            <h2>Heladerias</h2>
-            <p>Te preparamos un listado completo con las heladerías que mas nos gustaron y las mejores puntuadas de Buenos Aires:</p>
-                <div class="Cadore">Cadore</div>
-                <div class="Lucciano´s">Lucciano´s</div>
-                <div class="Rapa Nui">Rapa Nui</div>
-                <div class="Gruta">Gruta</div>
-                <div class="Podio">Podio</div>
-                <button>Ver más</button>
-            </div>
-        </section>
-    <!-- fin de seccion 2-->   
-        <aside class="border"></aside>
-       
-        <!-- inicio de footer-->
-        <footer class="border">
-            <h4>LOGO</h4>
-            <h4>REDES SOCIALES</h4>
-        </footer>
-        <!-- fin del footer -->
+<!-- inicio seccion 1-->
+<div class="container-fluid">
+    <div class="row">
+        <h2 class="bg-secondary col-12">Nosotras</h2>
+    </div>
+</div>
+<!-- fin seccion 1-->
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/nosotras1.jpg" class="d-block w-100" alt="nosotras1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/nosotras2.jpg" class="d-block w-100" alt="nosotras2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/nosotras3.jpg" class="d-block w-100" alt="nosotras3">
+      </div>
+    </div>
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+     <!-- section contenido -->
+     <div class="container">
+        <div class="row paddingTB">
+          <section class="col-lg-6 col-xs-12">
+            <h1>Un poco de nuestra historia...</h1>
+            <p>Somos dos hermanas amantes del helado gracias a nuestro papa que es el mayor fanatico. A partir de esto, creemos que tenemos un monton de secretos sobre helados... y que mejor que compartirlo!</p>
+          </section>
+          <section class="col-lg-6 col-xs-12">
+            <img src="img/insta2.jpg" alt="irving" class="img-fluid">
+          </section>
+        </div>
+      </div>
+
+<!-- inicio de footer -->
+
+        <footer>
+            <form action="/action_page.php">
+                <div class="form-group"> Registrate!
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Contraseña:</label>
+                  <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </footer>  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
-
+    
   </body>  
